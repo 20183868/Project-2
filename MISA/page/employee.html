@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="../css/common/main.css" rel="stylesheet" />
+    <link href="../css/common/header.css" rel="stylesheet" />
+    <link href="../css/common/navbar.css" rel="stylesheet" />
+    <link href="../css/common/content.css" rel="stylesheet" />
+    <link href="../css/page/employee.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-site">
+            <div class="toggle">
+                <img src="../content/img/toggle.png" alt="anh logo" height="24px">
+            </div>
+                
+            <div class="cukcuk-logo">
+                  <img src="../content/img/cukcuk-logo.png" alt="anh cuk cuk" height="24px">
+            </div>
+        </div>
+        <div class="navbar-content">
+            <div class="navbar-content-inside">
+                <div class="icon">
+                    <img src="../content/icon/dashboard.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Tổng quan</div>
+            </div>
+
+            <div class="navbar-content-inside">báo cáo
+                <div class="icon">
+                    <img src="../content/icon/report.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Báo cáo</div>
+            </div>
+            <div class="navbar-content-inside">
+                <div class="icon">
+                    <img src="../content/icon/dashboard.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Mua hàng</div>
+            </div>
+            <div class="navbar-content-inside">
+                <div class="icon">
+                    <img src="../content/icon/dic-employee.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Danh mục nhân viên</div>
+            </div>
+            <div class="navbar-content-inside">
+                <div class="icon">
+                    <img src="../content/icon/dic-employee.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Danh mục nhân viên</div>
+            </div>
+            <div class="navbar-content-inside">
+                <div class="icon">
+                    <img src="../content/icon/setting.png" alt="anh dashboard" height="20px">
+                </div>
+                <div class="letter">Thiết lập hệ thống</div>
+            </div>
+            
+        </div>
+    </div>   
+    <div class="header">
+        <div class="header-position-one"><h1>Nhà hàng biển đông</h1></div>
+        <div class="header-position-two"><i class="fa fa-angle-down" style="font-size:26px"></i></div>
+        <div class="header-position-three">
+            <div class="header-icon-mid">
+                <img src="../content/icon/avatar-default.png">
+            </div>
+        </div> 
+        <div class="header-position-four"><h1>Hoàng Văn Bút</h1></div>      
+        <div class="header-position-five">
+            <div class="header-icon-right">
+                <img src="../content/icon/option.png">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-top">
+            <div><h1>Danh sách nhân viên</h1></div>
+            
+            <button type="button" class="collapsible">
+                <h3>Thêm nhân viên</h3>
+                <img src="../content/icon/dic-employee.png" alt="">
+            </button>
+            <div class="content-collapse">
+              <p>Thông tin nhân viên</p>
+            </div>   
+            <script>
+                var coll = document.getElementsByClassName("collapsible");
+                var i;
+                
+                for (i = 0; i < coll.length; i++) {
+                  coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                      content.style.display = "none";
+                    } else {
+                      content.style.display = "block";
+                    }
+                  });
+                }
+                </script>
+                       
+        </div>
+    </div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

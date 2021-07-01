@@ -1,0 +1,87 @@
+.header{
+    float: left;
+    width: calc(100% - 221px);
+    height: 60px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.header .header-position-one {
+    float: left;
+    height: 60px;
+    width: 200px;
+    text-align: center;
+}
+
+
+.header .header-position-one h1 {
+    margin:auto;
+    line-height:51px;
+    vertical-align:middle;
+    height: 40px ;
+    width: 150px ;
+    font-size: 15px;
+}
+
+.header .header-position-two {
+    float: left;
+    height: 60px;
+    width: 200px;
+    left: 8px;
+}
+
+.header .header-position-two i{
+    margin-top: 12px;
+}
+
+.header .header-position-three {
+    float: left;
+    height: 60px;
+    width: 574px;
+    
+} 
+
+.header .header-position-three .header-icon-mid img {
+    margin:auto;
+    height: 40px ;
+    width: 50px ;
+    float: right;
+    position: absolute;
+    right: 150px;
+    top: 6px;
+}
+
+
+.header .header-position-four {
+    float: left;
+    height: 60px;
+    width: 120px;
+    text-align: center;
+}
+
+.header .header-position-four h1 {
+    margin:auto;
+    line-height:51px;
+    /* vertical-align:middle; */
+    height: 40px ;
+    width: 100px ;
+    font-size: 15px;
+    position: absolute;
+    right: 42px;
+}
+
+
+.header .header-position-five {
+    float: left;
+    height: 60px;
+    width: 50px;
+    
+} 
+
+.header .header-position-five .header-icon-right {
+    margin:auto;
+    line-height:51px;
+    vertical-align:middle;
+    height: 40px ;
+    width: 20px ;
+    margin-top: 6px;
+}
