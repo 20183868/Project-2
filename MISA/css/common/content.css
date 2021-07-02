@@ -33,14 +33,37 @@
   
   .active, .collapsible:hover {
     background-color: gold ;
+    
   }
+
+
+
+
+
   
   .content-collapse {
+    width: 1000px !important;
+    height: 400px;
     display: none;
     overflow: hidden;
-    background-color: #000;
+    background-color:white;
     width: auto;
+    position: absolute;
+    left: 200px;
+    top: 200px;
   }
+
+  .content .content-collapse-top{
+    width: 100%;
+    height: 50px;
+  }
+
+
+  .content-collapse-left{
+    width: 200px;
+    height: 500px;
+  }
+
 
   .content .content-top button{
       float: left;
@@ -136,13 +159,76 @@
 
   }
   .content-bottom .on-top{
-    height: 500px;
-    width: 100% ;
-    background-color:#ccc;
+    height: 600px;
+    width: calc(100% - 16px) ;
+    margin-left: 16px;
   }
 
-  .content-bottom .on-bottom{
-    height: 200px;
-    width: 100% ;
-    background-color: gold;
+  th{
+    text-align: left;
   }
+
+  th , td {
+    padding: 11px;
+    border-top: 1px solid #dee2e6;
+  }
+
+  table{
+    border-collapse: collapse;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+  .content-bottom .on-bottom{
+    margin-left: 16px;
+    height: 60px;
+    width: calc(100% - 32px) ;
+    bottom: 0;
+    position: absolute;
+    display: block;
+    border-top: 4px solid lightslategray;
+  }
+
+  .content-bottom-left{
+    float: left;
+  } 
+
+  .content-bottom-right{
+    float: right;
+  }
+
+  .content-bottom-mid{
+    float: left;
+    width: 869px;
+    height: 49px;
+    text-align:center ;
+    margin-top: 7px ;
+  }
+
+  .content-bottom-mid .first{
+    margin-left: 450px;
+  }
+
+/* thiết lập style cho thẻ a */
+.pagination a {
+  color: black;
+  float: left;
+  padding:  12px 18px;
+  text-decoration: none;
+}
+/* thiết lập style cho class active */
+.pagination a.active {
+  background-color: green;
+  color: white;
+  /*Thiết kế hình tròn với CSS*/
+  border-radius: 50%;
+}
+/* thêm màu nền khi người dùng hover vào class không active */
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  /*Thiết kế hình tròn với CSS*/
+  border-radius: 50%;
+}
+
