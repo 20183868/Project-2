@@ -1,0 +1,22 @@
+.form-header {
+  display: flex;
+  justify-content: space-between;
+}
+.form-header .cancel-button {
+  height: 36px;
+  width: 36px;
+  border-top-right-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form-header .cancel-button:hover {
+  background-color: #f65454;
+  cursor: pointer;
+}
+.form-header .cancel-button:active {
+  background-color: #ffffff;
+}
+.form-avatar {
+  height: 24px;
+}

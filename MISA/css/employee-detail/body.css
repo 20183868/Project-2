@@ -1,0 +1,110 @@
+.form-title {
+  margin-left: 24px;
+  font-family: GoogleSans-Regular;
+  font-size: 28px;
+  margin-top: 48px;
+}
+.form-body {
+  display: flex;
+  height: calc(100% - 150px);
+}
+.body-left {
+  height: 100%;
+  width: 25%;
+  display: block;
+}
+.body-left .avatar {
+  width: calc(100% - 48px);
+  border-radius: 50%;
+  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 36px;
+  border: 1px solid #bbbbbb;
+}
+.body-left .avatar:hover {
+  cursor: pointer;
+}
+.body-left .text {
+  text-align: center;
+  max-width: calc(100% - 64px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.body-right {
+  height: 100%;
+  max-height: 100%;
+  width: 75%;
+  padding-right: 24px;
+  overflow: auto;
+}
+.body-right .part-title {
+  margin-top: 28px;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding-bottom: 10px;
+}
+.part-title:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  bottom: 0;
+  left: 0;
+  border-bottom: 5px solid #01b075;
+}
+.info-field {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  width: 100%;
+  height: calc(calc(100% - 238px) / 8);
+  display: flex;
+  flex-direction: row;
+}
+.info-field-part {
+  margin-right: 12px;
+  width: calc(150px - 12px);
+}
+.info-field-part .text {
+  margin-right: 12px;
+  width: calc(50px - 12px);
+}
+.info-field-part .info-input {
+  width: calc(100px - 12px);
+}
+.info-uniform {
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-family: GoogleSans-Regular;
+  padding-left: 10px;
+}
+.info-uniform.info-input {
+  height: 2px;
+  width: 120px;
+}
+.info-uniform.info-date {
+  height: 2px;
+  width:120px;
+  padding-right: 12px;
+}
+.info-uniform.info-dropdown {
+  height:24px;
+  width: 147px;
+  padding-right: 12px;
+}
+.info-uniform.info-input::after {
+  content: "(VNĐ)";
+  font-style: italic;
+}
+.salary-text {
+  height: 10px;
+  width: calc(100px - 72px);
+  border: 1px solid #bbbbbb;
+  border-radius: 4px;
+  font-family: GoogleSans-Regular;
+  border: none;
+}
+.salary-text:focus {
+  outline: none;
+}

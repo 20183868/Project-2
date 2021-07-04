@@ -3,404 +3,540 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <link href="../css/common/main.css" rel="stylesheet" />
-    <link href="../css/common/header.css" rel="stylesheet" />
-    <link href="../css/common/navbar.css" rel="stylesheet" />
-    <link href="../css/common/content.css" rel="stylesheet" />
-    <link href="../css/page/employee.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/common/main.css"/>
+    <link rel="stylesheet" href="../css/common/header.css" />
+    <link rel="stylesheet" href="../css/common/navbar.css" />
+    <link rel="stylesheet" href="../css/common/content.css"  />
+    <link rel="stylesheet" href="../css/page/employee.css"  />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/common/grid.css" />
+    <link rel="stylesheet" href="../css/employee-detail/body.css"/>
+    <link rel="stylesheet" href="../css/employee-detail/footer.css"/>
+    <link rel="stylesheet" href="../css/employee-detail/header.css"/>
+    <link rel="stylesheet" href="../css/employee-detail/modal.css">
+    
 
 </head>
 <body>
     <div class="navbar">
-        <div class="logo-site">
-            <div class="toggle">
-                <img src="../content/img/toggle.png" alt="anh logo" height="24px">
+      <div class="logo-site">
+        <div class="logo-box">
+          <div class="toggle">               
+          </div>                
+          <div class="cukcuk-logo">                  
+          </div>
+        </div>
+      </div>      
+    
+    <div class="navbar-content">
+        <div class="nav-item">
+           <div class="nav-item-icon nav-item1">
+           </div>
+           <div class="nav-item-text">Tổng quan
+           </div>
+        </div>
+        <div class="nav-item">
+           <div class="nav-item-icon nav-item2">
+           </div>
+            <div class="nav-item-text">Báo cáo
+           </div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-item-icon nav-item3"> 
+           </div>
+           <div class="nav-item-text">Mua hàng
+           </div>
+        </div>
+        <div class="nav-item">
+            <div class="nav-item-icon nav-item4">
             </div>
-                
-            <div class="cukcuk-logo">
-                  <img src="../content/img/cukcuk-logo.png" alt="anh cuk cuk" height="24px">
+            <div class="nav-item-text">Danh mục nhân viên
             </div>
         </div>
-        <div class="navbar-content">
-            <div class="navbar-content-inside">
-                <div class="icon">
-                    <img src="../content/icon/dashboard.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Tổng quan</div>
+        <div class="nav-item">
+            <div class="nav-item-icon nav-item5">
             </div>
-
-            <div class="navbar-content-inside">báo cáo
-                <div class="icon">
-                    <img src="../content/icon/report.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Báo cáo</div>
-            </div>
-            <div class="navbar-content-inside">
-                <div class="icon">
-                    <img src="../content/icon/dashboard.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Mua hàng</div>
-            </div>
-            <div class="navbar-content-inside">
-                <div class="icon">
-                    <img src="../content/icon/dic-employee.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Danh mục nhân viên</div>
-            </div>
-            <div class="navbar-content-inside">
-                <div class="icon">
-                    <img src="../content/icon/dic-employee.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Danh mục nhân viên</div>
-            </div>
-            <div class="navbar-content-inside">
-                <div class="icon">
-                    <img src="../content/icon/setting.png" alt="anh dashboard" height="20px">
-                </div>
-                <div class="letter">Thiết lập hệ thống</div>
-            </div>
-            
-        </div>
-    </div>   
-    <div class="header">
-        <div class="header-position-one"><h1>Nhà hàng biển đông</h1></div>
-        <div class="header-position-two"><i class="fa fa-angle-down" style="font-size:26px"></i></div>
-        <div class="header-position-three">
-            <div class="header-icon-mid">
-                <img src="../content/icon/avatar-default.png">
-            </div>
-        </div> 
-        <div class="header-position-four"><h1>Hoàng Văn Bút</h1></div>      
-        <div class="header-position-five">
-            <div class="header-icon-right">
-                <img src="../content/icon/option.png">
-            </div>
+           <div class="nav-item-text">Thiết lập hệ thống
+           </div>
         </div>
     </div>
-    <div class="content">
-
-        <div class="content-top">
-            <div><h1>Danh sách nhân viên</h1></div>
-            
-            <button type="button" id="btn" class="collapsible">
-                <h3>Thêm nhân viên</h3>
-                <img src="../content/icon/dic-employee.png" alt="">
-            </button>
-
-
-
-
-
-
-
-            <div class="content-collapse">
-              
-              <div class="content-collapse-top">
-                  <!-- <h1>Thông tin nhân viên</h1> -->dsfasdfas
-              </div>
-
-              <div>ádasdas</div>
-              <div>ádasdasd</div>
-            </div>   
-
-
-
-
-
-
-            <script>
-                var coll = document.getElementsByClassName("collapsible");
-                var i;
-                
-                for (i = 0; i < coll.length; i++) {
-                  coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                      content.style.display = "none";
-                    } else {
-                      content.style.display = "block";
-                    }
-                  });
-                }
-                </script>
-                       
+  </div>
+  <!-- header  -->
+    <div class='header' id='header'>
+      <span class='header-item header-item-left'>
+        <select class='header-dropdown header-left-text'>
+          <option selected disabled hidden>
+            Nhà hàng Biển Đông
+          </option>
+        </select>
+      </span>
+      <span class='header-item header-item-right'>
+        <div class='header-item-right-right'>
+          <img src='../content/icon/avatar-default.png' height='24px' />
         </div>
+        <div class='header-item-right-right'>
+          Hoàng Văn Bút
+        </div>
+        <div class='header-item-right-right'>
+          <img src='../content/icon/option.png' height='16px'>
+        </div>
+      </span>
+    </div>
+
+  <!-- content -->
+  <div class="content">
     
-        <div class="content-mid">
-        
-        
-            <input class="search" type="text"  placeholder="Tìm kiếm theo mã Tên Hoặc Số điện thoại">
-       
+    <div class="header-content">
+      <div class="title">Danh sách nhân viên</div>
+      <div class="content-feature">
+        <button class="m-btn m-btn-default">
+          <div class="m-btn-icon icon-add"></div>
+          <div class="btn-text">Thêm nhân viên</div>
+        </button>   
 
-       
-            <select id="room" name="room">
-                <option value="all">Tất cả phòng ban</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
 
-            <select id="localtion" name="localtion">
-                <option value="all">Tất cả vị trí</option>
-                <option value="saab">Saab</option>
-                <option value="fiat">Fiat</option>
-                <option value="audi">Audi</option>
-            </select>
+
+
+
         
-        
-       
-            <button class="content-icon1 content-icon2"></button>
-        
-
-        </div>
-
-        <div class="content-bottom">
-            <div class="on-top">
-                <table style="width:100%">
-                    <tr>
-                      <th>Mã nhân viên</th>
-                      <th>Họ và tên</th> 
-                      <th>Giới tính</th>
-                      <th>Ngày sinh</th>
-                      <th>Điện thoại</th>
-                      <th>Email</th>
-                      <th>Chức vụ</th>
-                      <th>Phòng ban</th>
-                      <th>Mức lương cơ bản</th>
-                      <th>Tình trạng làm việc</th>
-                    </tr>
-                    <tr>
-                      <td>MF903</td>
-                      <td>Hoàng Văn Bút</td>
-                      <td>Nam</td>
-                      <td>06/06/2000</td>
-                      <td>0859662000</td>
-                      <td>buthoangvan@gmail.com</td>
-                      <td>Bảo vệ</td>
-                      <td>Phòng bảo vệ</td>
-                      <td>1.000.000</td>
-                      <td>Đang thử việc</td>
-                    </tr>
-                    <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                      </tr>
-                      <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                    </tr>
-                    <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                    </tr>
-                    <tr>
-                        <td>MF903</td>
-                        <td>Hoàng Văn Bút</td>
-                        <td>Nam</td>
-                        <td>06/06/2000</td>
-                        <td>0859662000</td>
-                        <td>buthoangvan@gmail.com</td>
-                        <td>Bảo vệ</td>
-                        <td>Phòng bảo vệ</td>
-                        <td>1.000.000</td>
-                        <td>Đang thử việc</td>
-                    </tr>
-                    <tr>
-                      <td>MF903</td>
-                      <td>Hoàng Văn Bút</td>
-                      <td>Nam</td>
-                      <td>06/06/2000</td>
-                      <td>0859662000</td>
-                      <td>buthoangvan@gmail.com</td>
-                      <td>Bảo vệ</td>
-                      <td>Phòng bảo vệ</td>
-                      <td>1.000.000</td>
-                      <td>Đang thử việc</td>
-                  </tr>
-
-                </table>
+        <div class="modal" id='modal'>
+          <div class="modal-content">
+            <!--Form header-->
+            <div class='form-header'>
+              <div class='form-title'>
+                THÔNG TIN NHÂN VIÊN
+              </div>
+              <div class='cancel-button' onclick='closeForm()'>
+                <img src='../content/icon/x.svg' />
+              </div>
             </div>
-            <div class="on-bottom" >
-                <div class="content-bottom-left">
-                    <h5>Hiển thị 1-10/1000 nhân viên</h5>
+      
+            <!--Form body-->
+            <div class='form-body'>
+              <div class='body-left'>
+                <img class='avatar' src='../content/img/default-avatar.jpg' />
+                <div class='text'>(Vui lòng chọn ảnh có định dạng <br> .jpg, .jpeg, .png, .gif.)</div>
+              </div>
+              <!--Body right (Main part)-->
+              <div class='body-right'>
+                <div class='part-title'>
+                  A. THÔNG TIN CHUNG:
                 </div>
-                <div class="content-bottom-mid">
-                  <div class="pagination">
-                    <a class="first" href="#"><img src="../content/icon/btn-firstpage.svg" alt="2 mui ten ben trai"></a>
-                    <a href="#"><img src="../content/icon/btn-prev-page.svg" alt="2 mui ten ben trai"></a>                   
-                    <a href="#">1</a>
-                    <a class="active" href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#"><img src="../content/icon/btn-next-page.svg" alt="2 mui ten ben trai"></a>
-                    <a href="#"><img src="../content/icon/btn-lastpage.svg" alt="2 mui ten ben trai"></a>
-                    
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Mã nhân viên (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Họ và tên (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
                   </div>
                 </div>
-                <div class="content-bottom-right">
-                    <h5>10 nhân viên/trang</h5>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày sinh
+                    </div>
+                    <input type='date' class='info-uniform info-date' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Giới tính
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
                 </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Số CMTND/Căn cước (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày cấp
+                    </div>
+                    <input type='date' class='info-uniform info-date' />
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Nơi cấp
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+      
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Email (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Số điện thoại (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                </div>
+                <div class='part-title'>
+                  B. THÔNG TIN CÔNG VIỆC:
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Vị trí
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Phòng ban
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Mã số thuế cá nhân
+                    </div>
+                    <input class='info-uniform info-input info-salary'>
+                    <input class='salary-text' />
+                    </input>
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Mức lương cơ bản
+                    </div>
+                    <div class='info-uniform info-input'>
+                      <input class='salary-text' />
+                    </div>
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày gia nhập công ty
+                    </div>
+                    <input type='date' class='info-uniform info-date' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Tình trạng công việc
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!--Form footer-->
+            <div class='form-footer'>
+              <div class='cancel-button' onclick='closeForm()'>
+                Hủy
+              </div>
+              <div class='save-button'>
+                <img class='button-icon' src='../content/icon/x.svg' />
+                Lưu
+              </div>
+            </div>
+          </div>
         </div>
         
+        
+
+
+
+
+        <script>
+          var coll = document.getElementsByClassName("m-btn-default");
+          var i;
+          
+          for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+                content.style.display = "none";
+              } else {
+                content.style.display = "block";
+              }
+            });
+          }
+          </script>
+
+     </div>
     </div>
+
+
+
+    <div class="filter-bar">
+      <div class="filter-left">
+        <input class="icon-search" style="width: 200px;" type="text" placeholder="Tìm kiếm theo Mã Tên hoặc Số điện thoại ">
+        <select id="room" name="room">
+          <option value="all">Tất cả phòng ban</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+      </select>
+
+      <select id="localtion" name="localtion">
+          <option value="all">Tất cả vị trí</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+      </select>
+      </div>
+      <div class="filter-right">
+        <button class="m-second-button m-btn-refresh"></button>
+      </div>
+    </div>
+    <div class="grid grid-employee">
+      <table style="width:100%">
+        <tr>
+          <th>Mã nhân viên</th>
+          <th>Họ và tên</th> 
+          <th>Giới tính</th>
+          <th>Ngày sinh</th>
+          <th>Điện thoại</th>
+          <th>Email</th>
+          <th>Chức vụ</th>
+          <th>Phòng ban</th>
+          <th>Mức lương cơ bản</th>
+          <th>Tình trạng làm việc</th>
+        </tr>
+        <tr>
+          <td>MF903</td>
+          <td>Hoàng Văn Bút</td>
+          <td>Nam</td>
+          <td>06/06/2000</td>
+          <td>0859662000</td>
+          <td>buthoangvan@gmail.com</td>
+          <td>Bảo vệ</td>
+          <td>Phòng bảo vệ</td>
+          <td>1.000.000</td>
+          <td>Đang thử việc</td>
+        </tr>
+        <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+          </tr>
+          <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+        </tr>
+        <tr>
+            <td>MF903</td>
+            <td>Hoàng Văn Bút</td>
+            <td>Nam</td>
+            <td>06/06/2000</td>
+            <td>0859662000</td>
+            <td>buthoangvan@gmail.com</td>
+            <td>Bảo vệ</td>
+            <td>Phòng bảo vệ</td>
+            <td>1.000.000</td>
+            <td>Đang thử việc</td>
+        </tr>
+
+
+    </table>
+      
+    </div>
+    <div class="on-bottom" >
+      <div class="content-bottom-left">
+          <h5>Hiển thị 1-10/1000 nhân viên</h5>
+      </div>
+      <div class="content-bottom-mid">
+        <div class="pagination">
+          <a class="first" href="#"><img src="../content/icon/btn-firstpage.svg" alt="2 mui ten ben trai"></a>
+          <a href="#"><img src="../content/icon/btn-prev-page.svg" alt="2 mui ten ben trai"></a>                   
+          <a href="#">1</a>
+          <a class="active" href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#"><img src="../content/icon/btn-next-page.svg" alt="2 mui ten ben trai"></a>
+          <a href="#"><img src="../content/icon/btn-lastpage.svg" alt="2 mui ten ben trai"></a>
+          
+        </div>
+      </div>
+      <div class="content-bottom-right">
+          <h5>10 nhân viên/trang</h5>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

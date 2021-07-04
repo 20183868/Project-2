@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>This is form.html</title>
+  <!--Add css files-->
+  <link href="/css/common/main.css" rel="stylesheet" />
+  <link href="/css/employee-detail/modal.css" rel="stylesheet" />
+  <link href="/css/employee-detail/body.css" rel="stylesheet" />
+  <link href="/css/employee-detail/header.css" rel="stylesheet" />
+  <link href="/css/employee-detail/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="modal" id='modal'>
+    <div class="modal-content">
+      <!--Form header-->
+      <div class='form-header'>
+        <div class='form-title'>
+          THÔNG TIN NHÂN VIÊN
+        </div>
+        <div class='cancel-button' onclick='closeForm()'>
+          <img src='resources/icons/x.svg' />
+        </div>
+      </div>
+
+      <!--Form body-->
+      <div class='form-body'>
+        <div class='body-left'>
+          <img class='avatar' src='resources/imgs/default-avatar.jpg' />
+          <div class='text'>(Vui lòng chọn ảnh có định dạng <br> .jpg, .jpeg, .png, .gif.)</div>
+        </div>
+        <!--Body right (Main part)-->
+        <div class='body-right'>
+          <div class='part-title'>
+            A. THÔNG TIN CHUNG:
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Mã nhân viên (<span style='color: #ff0000;'>*</span>)
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Họ và tên (<span style='color: #ff0000;'>*</span>)
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Ngày sinh
+              </div>
+              <input type='date' class='info-uniform info-date' />
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Giới tính
+              </div>
+              <select class='info-uniform info-dropdown'>
+                <option>
+                  Giam doc
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Số CMTND/Căn cước (<span style='color: #ff0000;'>*</span>)
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Ngày cấp
+              </div>
+              <input type='date' class='info-uniform info-date' />
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Nơi cấp
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+            <div class='info-field-part'>
+
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Email (<span style='color: #ff0000;'>*</span>)
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Số điện thoại (<span style='color: #ff0000;'>*</span>)
+              </div>
+              <input type='textfield' class='info-uniform info-input' />
+            </div>
+          </div>
+          <div class='part-title'>
+            B. THÔNG TIN CÔNG VIỆC:
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Vị trí
+              </div>
+              <select class='info-uniform info-dropdown'>
+                <option>
+                  Giam doc
+                </option>
+              </select>
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Phòng ban
+              </div>
+              <select class='info-uniform info-dropdown'>
+                <option>
+                  Giam doc
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Mã số thuế cá nhân
+              </div>
+              <input class='info-uniform info-input info-salary'>
+              <input class='salary-text' />
+              </input>
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Mức lương cơ bản
+              </div>
+              <div class='info-uniform info-input'>
+                <input class='salary-text' />
+              </div>
+            </div>
+          </div>
+          <div class='info-field'>
+            <div class='info-field-part'>
+              <div>
+                Ngày gia nhập công ty
+              </div>
+              <input type='date' class='info-uniform info-date' />
+            </div>
+            <div class='info-field-part'>
+              <div>
+                Tình trạng công việc
+              </div>
+              <select class='info-uniform info-dropdown'>
+                <option>
+                  Giam doc
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Form footer-->
+      <div class='form-footer'>
+        <div class='cancel-button' onclick='closeForm()'>
+          Hủy
+        </div>
+        <div class='save-button'>
+          <img class='button-icon' src='/resources/icons/save.png' />
+          Lưu
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
