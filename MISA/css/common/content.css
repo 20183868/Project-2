@@ -51,10 +51,9 @@
   margin-left: 8px;
 }
 
-.content-feature :hover{
+/* .content-feature :hover{
   background-color: #2FBE8E;
-  /* background-color: black; */
-}
+} */
 
 .m-btn .m-btn-icon{
   background-position: center;
@@ -144,7 +143,7 @@ input{
 
 
 
-/* 
+
 .content .on-bottom{
   margin-left: 16px;
   height: 60px;
@@ -153,26 +152,33 @@ input{
   position: absolute;
   display: block;
   border-top: 4px solid lightslategray;
-} */
+}
 
 .content-bottom-left{
   float: left;
+  display: flex;
 } 
 
 .content-bottom-right{
   float: right;
+  display: flex;
 }
 
 .content-bottom-mid{
   float: left;
-  width: 858px;
+  width: 1010px;
   height: 49px;
   text-align:center ;
   margin-top: 7px ;
+  display: flex;
 }
 
 .content-bottom-mid .first{
-  margin-left: 245px;
+  margin-left: 450px;
+}
+
+.pagination{
+  width: 100%;
 }
 
 /* thiết lập style cho thẻ a */

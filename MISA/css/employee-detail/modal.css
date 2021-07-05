@@ -17,6 +17,6 @@
   width: calc(60% - 24px);
   border: 0px solid #ffffff;
   border-radius: 6px;
-  height: calc(100% - 24px);
+  height: calc(100% - 100px);
   position:relative;
 }
