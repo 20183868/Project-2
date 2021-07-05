@@ -2,6 +2,17 @@
     width: 100%;
     /* background-color: #808080; */
     /* height: 100vh; */
+    overflow: auto;
+}
+
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(189, 180, 180);
+  border-radius: 5px;
 }
 
 th{

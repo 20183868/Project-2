@@ -166,7 +166,8 @@ input{
 
 .content-bottom-mid{
   float: left;
-  width: 1010px;
+  /* width: 1010px; */
+  width: 826px;
   height: 49px;
   text-align:center ;
   margin-top: 7px ;
@@ -174,7 +175,8 @@ input{
 }
 
 .content-bottom-mid .first{
-  margin-left: 450px;
+  /* margin-left: 450px; */
+  margin-left: 250px;
 }
 
 .pagination{
