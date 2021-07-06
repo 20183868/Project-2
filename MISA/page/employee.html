@@ -270,35 +270,195 @@
             </div>
           </div>
         </div>
-        <script>
-          function closeForm() {
-            document.getElementsByClassName('modal')[0].style.display = 'none';
-          }
-          function showForm() {
-            document.getElementsByClassName('modal')[0].style.display = 'block';
-          }
-        </script>
 
 
 
 
 
-        <!-- <script>
-          var coll = document.getElementsByClassName("m-btn-default");
-          var i;
-          
-          for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-              this.classList.toggle("active");
-              var content = this.nextElementSibling;
-              if (content.style.display === "block") {
-                content.style.display = "none";
-              } else {
-                content.style.display = "block";
-              }
-            });
-          }
-          </script> -->
+
+        <div class="modal" id='fix'>
+          <div class="modal-content">
+            <!--Form header-->
+            <div class='form-header'>
+              <div class='form-title'>
+                THÔNG TIN NHÂN VIÊN
+              </div>
+              <div class='cancel-button' onclick='closeFormFix()'>
+                <img src='../content/icon/x.svg' />
+              </div>
+            </div>
+
+            <!--Form body-->
+            <div class='form-body'>
+              <div class='body-left'>
+                <img class='avatar' src='../content/img/default-avatar.jpg' />
+                <div class='text'>(Vui lòng chọn ảnh có định dạng <br> .jpg, .jpeg, .png, .gif.)</div>
+              </div>
+              <!--Body right (Main part)-->
+              <div class='body-right'>
+                <div class='part-title'>
+                  A. THÔNG TIN CHUNG:
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Mã nhân viên (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' name="employee-id" class='info-uniform info-input' placeholder="" />
+                   <script>
+                    //  $(function () {
+                    //   $('#table a').click(function (e) {
+                    //   e.preventDefault();
+                    //   $('#result').val($(this).closest('tr').find('td:first').text()); //Lấy value cột thứ nhất
+                    // //$('#result2').val($(this).closest('tr').find('td:nth-child(2)').text()); //Hoặc lấy giá trị cột thứ 2
+                    //    });
+                    // });
+                     document.getElementsByName('employee-id')[0].placeholder='new text for email';
+                   </script>
+
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Họ và tên (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày sinh
+                    </div>
+                    <input type="date" class='info-uniform info-date' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Giới tính
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Số CMTND/Căn cước (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày cấp
+                    </div>
+                    <input type='date' class='info-uniform info-date' />
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Nơi cấp
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Email (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Số điện thoại (<span style='color: #ff0000;'>*</span>)
+                    </div>
+                    <input type='textfield' class='info-uniform info-input' />
+                  </div>
+                </div>
+                <div class='part-title'>
+                  B. THÔNG TIN CÔNG VIỆC:
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Vị trí
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Phòng ban
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Mã số thuế cá nhân
+                    </div>
+                    <input class='info-uniform info-input'>
+                    <input class='salary-text' />
+                    </input>
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Mức lương cơ bản
+                    </div>
+                    <div class='info-uniform info-input info-salary'>
+                      <input class='salary-text' />
+                    </div>
+                  </div>
+                </div>
+                <div class='info-field'>
+                  <div class='info-field-part'>
+                    <div>
+                      Ngày gia nhập công ty
+                    </div>
+                    <input type='date' class='info-uniform info-date' />
+                  </div>
+                  <div class='info-field-part'>
+                    <div>
+                      Tình trạng công việc
+                    </div>
+                    <select class='info-uniform info-dropdown'>
+                      <option>
+                        Giam doc
+                      </option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--Form footer-->
+            <div class='form-footer'>
+              <div class='cancel-button' onclick="closeFormFix()">
+                Xóa
+              </div>
+              <div class='save-button'>
+                <img class='button-icon' src='../content/icon/floppy-disk.png' />
+                Sửa
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
 
       </div>
     </div>
@@ -329,6 +489,7 @@
     </div>
     <div class="grid grid-employee">
       <table style="width:100%">
+        <thead>
         <tr>
           <th>Mã nhân viên</th>
           <th>Họ và tên</th>
@@ -341,7 +502,9 @@
           <th>Mức lương cơ bản</th>
           <th>Tình trạng làm việc</th>
         </tr>
-        <tr>
+      </thead>
+      <tbody>
+        <!-- <tr>
           <td>MF903</td>
           <td>Hoàng Văn Bút</td>
           <td>Nam</td>
@@ -520,8 +683,8 @@
           <td>Phòng bảo vệ</td>
           <td>1.000.000</td>
           <td>Đang thử việc</td>
-        </tr>
-
+        </tr> -->
+      </tbody>
 
       </table>
 
@@ -548,6 +711,10 @@
       </div>
     </div>
   </div>
+
+  <script src="../lib/jquery-3.6.0.min.js"></script>
+  <script src="../js/common/common.js"></script>
+  <script src="../js/page/employee.js"></script>
 </body>
 
 </html>

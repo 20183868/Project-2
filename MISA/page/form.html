@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <title>This is form.html</title>
   <!--Add css files-->
-  <link href="/css/common/main.css" rel="stylesheet" />
-  <link href="/css/employee-detail/modal.css" rel="stylesheet" />
-  <link href="/css/employee-detail/body.css" rel="stylesheet" />
-  <link href="/css/employee-detail/header.css" rel="stylesheet" />
-  <link href="/css/employee-detail/footer.css" rel="stylesheet" />
+  <link href="./css/common/main.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/employee-detail/body.css" />
+  <link rel="stylesheet" href="../css/employee-detail/footer.css" />
+  <link rel="stylesheet" href="../css/employee-detail/header.css" />
+  <link rel="stylesheet" href="../css/employee-detail/modal.css">
+
 </head>
 
 <body>
@@ -21,14 +22,14 @@
           THÔNG TIN NHÂN VIÊN
         </div>
         <div class='cancel-button' onclick='closeForm()'>
-          <img src='resources/icons/x.svg' />
+          <img src='../content/icon/x.svg' />
         </div>
       </div>
 
       <!--Form body-->
       <div class='form-body'>
         <div class='body-left'>
-          <img class='avatar' src='resources/imgs/default-avatar.jpg' />
+          <img class='avatar' src='../content/img/default-avatar.jpg' />
           <div class='text'>(Vui lòng chọn ảnh có định dạng <br> .jpg, .jpeg, .png, .gif.)</div>
         </div>
         <!--Body right (Main part)-->
@@ -55,7 +56,7 @@
               <div>
                 Ngày sinh
               </div>
-              <input type='date' class='info-uniform info-date' />
+              <input type="date" class='info-uniform info-date' />
             </div>
             <div class='info-field-part'>
               <div>
@@ -137,7 +138,7 @@
               <div>
                 Mã số thuế cá nhân
               </div>
-              <input class='info-uniform info-input info-salary'>
+              <input class='info-uniform info-input'>
               <input class='salary-text' />
               </input>
             </div>
@@ -145,7 +146,7 @@
               <div>
                 Mức lương cơ bản
               </div>
-              <div class='info-uniform info-input'>
+              <div class='info-uniform info-input info-salary'>
                 <input class='salary-text' />
               </div>
             </div>
@@ -172,16 +173,17 @@
       </div>
       <!--Form footer-->
       <div class='form-footer'>
-        <div class='cancel-button' onclick='closeForm()'>
+        <div class='cancel-button' onclick="closeForm()">
           Hủy
         </div>
         <div class='save-button'>
-          <img class='button-icon' src='/resources/icons/save.png' />
+          <img class='button-icon' src='../content/icon/floppy-disk.png' />
           Lưu
         </div>
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
