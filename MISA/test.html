@@ -1,21 +1,82 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/common/test.css">
+<html>
+  <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js">
+  </script> 
 
-</head>
-<body>
-    <div class="dropdown">
-        <button  onclick="hamDropdown()"  class="nut_dropdown">Dropdown</button>
-        <div class="noidung_dropdown">
-          <a href="#">Đường Dẫn 1</a>
-          <a href="#">Đường Dẫn 2</a>
-          <a href="#">Đường Dẫn 3</a>
-        </div>
-      </div>
-     
-      <script src="./js/test.js"></script>
-</body>
-</html>
+  <script>
+      jQuery(document).ready(function($) { 
+          $.ajax({ 
+              url : "http://api.example.com/v1/deal/hotel?apikey=xxx&format=JSONP", 
+              dataType : "jsonp",
+              success : function(parsed_json) { 
+
+                  $.each(parsed_json.Result, function( index, value ) {
+                  alert( index + ": " + value.StarRating + " , "+ value.Url);
+
+              });
+
+              var from = parsed_json['Result'][0]['StartDate']; 
+              document.getElementById("from").innerHTML = from;
+
+              var from = parsed_json['Result'][0]['StartDate']; 
+              document.getElementById("from").innerHTML = from;
+
+              var to = parsed_json['Result'][0]['EndDate']; 
+              document.getElementById("to").innerHTML = to;
+
+              var nights = parsed_json['Result'][0]['NightDuration']; 
+              document.getElementById("nights").innerHTML = nights;
+
+              var currency = parsed_json['Result'][0]['CurrencyCode']; 
+              document.getElementById("currency").innerHTML = currency;           
+
+              var price = parsed_json['Result'][0]['Price']; 
+              document.getElementById("price").innerHTML = price;
+
+              var link = parsed_json['Result'][0]['Url']; 
+              document.getElementById("link").innerHTML = link;
+              //how to represent enlaces
+
+              var city = parsed_json['Result'][0]['City']; 
+              document.getElementById("city").innerHTML = city;
+
+              var country = parsed_json['Result'][0]['CountryCode']; 
+              document.getElementById("country").innerHTML = country;
+
+              var stars = parsed_json['Result'][0]['StarRating']; 
+              document.getElementById("stars").innerHTML = stars; 
+
+              }
+          }); 
+      }); 
+  </script>
+  </head>
+  <body>
+
+  <table id="t">
+      <tr>
+          <th>Start date</th>
+          <th>End date</th>
+          <th>Nights</th>
+          <th>Currency</th>
+          <th>Price</th> 
+          <th>Link</th>
+          <th>City</th>
+          <th>Country Code</th>
+          <th>Star Rating</th>
+      </tr>
+      <tr>
+          <td id="from"></td> 
+          <td id="to"></td>
+          <td id="nights"></td>
+          <td id="currency"></td>
+          <td id="price"></td> 
+          <td id="link"></td>
+          <td id="city"></td>
+          <td id="country"></td>
+          <td id="stars"></td>
+      </tr>
+  </table>
+
+  </body>
+  </html>

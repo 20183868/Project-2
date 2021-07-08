@@ -1,37 +1,14 @@
 $(document).ready(function(){
-   new EmployeeJS();
-})
+    new CustomerJS();
+ })
 
-
-// function formatDate(date){
-//     var date = new Date(date) ;
-//     var day = date.getDate();
-//     var month = date.getMonth() + 1;
-//     var year = date.getFullYear() ;
-//     day = day < 10 ? '0' + day : day ;
-//     month = month < 10 ? '0' + month : month ;
-
-//     return day + '/'+month +'/'+year ;
-// }
-
-// function formartSalary(salary){
-//     if( salary == null){
-//         salary = '' ;
-//         return salary;
-//     }else
-//     return String(salary).replace(/(.)(?=(\d{3})+$)/g,'$1.') + ' $' ;
-// }
-
-
-
-
-class EmployeeJS extends BaseJS  {
-    constructor(){
+ 
+class  CustomerJS extends BaseJS{ 
+     constructor(){
         // this.loadData() ;
-        super() ;
-    }
-
-    // loadData(){
+        super();
+     }
+    //  loadData(){
     //     $.ajax({
     //         url : "http://cukcuk.manhnv.net/v1/Employees" ,
     //         method: "GET" ,
@@ -63,4 +40,13 @@ class EmployeeJS extends BaseJS  {
     
     //     })
     // }
-}
+     add(){
+
+     }
+     edit(){
+
+     }
+     delete(){
+
+     }
+ }
