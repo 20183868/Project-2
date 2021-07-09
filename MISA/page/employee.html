@@ -135,13 +135,13 @@
                     <div>
                       Mã nhân viên (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="EmployeeCode" />
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Họ và tên (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="FullName" />
                   </div>
                 </div>
                 <div class='info-field'>
@@ -149,13 +149,13 @@
                     <div>
                       Ngày sinh
                     </div>
-                    <input type="date" class='info-uniform info-date' />
+                    <input type="date" class='info-uniform info-date' id="dateofBirth"/>
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Giới tính
                     </div>
-                    <select class='info-uniform info-dropdown'>
+                    <select class='info-uniform info-dropdown' id="GenderName">
                       <option>
                         Giam doc
                       </option>
@@ -167,13 +167,13 @@
                     <div>
                       Số CMTND/Căn cước (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="employeeId" />
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Ngày cấp
                     </div>
-                    <input type='date' class='info-uniform info-date' />
+                    <input type='date' class='info-uniform info-date' id="identityDate" />
                   </div>
                 </div>
                 <div class='info-field'>
@@ -181,7 +181,7 @@
                     <div>
                       Nơi cấp
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="identityPlace" />
                   </div>
                   <div class='info-field-part'>
 
@@ -192,13 +192,13 @@
                     <div>
                       Email (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="email"/>
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Số điện thoại (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' class='info-uniform info-input' />
+                    <input type='textfield' class='info-uniform info-input' id="phoneNumber" />
                   </div>
                 </div>
                 <div class='part-title'>
@@ -209,7 +209,7 @@
                     <div>
                       Vị trí
                     </div>
-                    <select class='info-uniform info-dropdown'>
+                    <select class='info-uniform info-dropdown' id="PositionName">
                       <option>
                         Giam doc
                       </option>
@@ -219,7 +219,7 @@
                     <div>
                       Phòng ban
                     </div>
-                    <select class='info-uniform info-dropdown'>
+                    <select class='info-uniform info-dropdown' id="DepartmentCode">
                       <option>
                         Giam doc
                       </option>
@@ -231,15 +231,14 @@
                     <div>
                       Mã số thuế cá nhân
                     </div>
-                    <input class='info-uniform info-input'>
+                    <input class='info-uniform info-input' id="personalTaxCode">
                     <input class='salary-text' />
-                    </input>
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Mức lương cơ bản
                     </div>
-                    <div class='info-uniform info-input info-salary'>
+                    <div class='info-uniform info-input info-salary' id="Salary">
                       <input class='salary-text' />
                     </div>
                   </div>
@@ -249,13 +248,13 @@
                     <div>
                       Ngày gia nhập công ty
                     </div>
-                    <input type='date' class='info-uniform info-date' />
+                    <input type='date' class='info-uniform info-date' id="createdDate" />
                   </div>
                   <div class='info-field-part'>
                     <div>
                       Tình trạng công việc
                     </div>
-                    <select class='info-uniform info-dropdown'>
+                    <select class='info-uniform info-dropdown' id="WorkStatus">
                       <option>
                         Giam doc
                       </option>
@@ -269,7 +268,7 @@
               <div class='cancel-button' onclick="closeForm()">
                 Hủy
               </div>
-              <div class='save-button'>
+              <div class='save-button' onclick="addData()">
                 <img class='button-icon' src='../content/icon/floppy-disk.png' />
                 Lưu
               </div>
@@ -310,17 +309,7 @@
                     <div>
                       Mã nhân viên (<span style='color: #ff0000;'>*</span>)
                     </div>
-                    <input type='textfield' name="employee-id" class='info-uniform info-input' placeholder="" />
-                   <script>
-                    //  $(function () {
-                    //   $('#table a').click(function (e) {
-                    //   e.preventDefault();
-                    //   $('#result').val($(this).closest('tr').find('td:first').text()); //Lấy value cột thứ nhất
-                    // //$('#result2').val($(this).closest('tr').find('td:nth-child(2)').text()); //Hoặc lấy giá trị cột thứ 2
-                    //    });
-                    // });
-                     document.getElementsByName('employee-id')[0].placeholder='new text for email';
-                   </script>
+                    <input type='textfield' name="employee-id" class='info-uniform info-input' />
 
                   </div>
                   <div class='info-field-part'>

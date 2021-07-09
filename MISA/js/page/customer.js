@@ -5,7 +5,7 @@ $(document).ready(function(){
  
 class  CustomerJS extends BaseJS{ 
      constructor(){
-        // this.loadData() ;
+      //   this.loadData() ;
         super();
      }
     //  loadData(){
@@ -40,9 +40,7 @@ class  CustomerJS extends BaseJS{
     
     //     })
     // }
-     add(){
-
-     }
+      
      edit(){
 
      }

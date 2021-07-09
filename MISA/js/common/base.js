@@ -1,4 +1,3 @@
-
 function formatDate(date){
     var date = new Date(date) ;
     var day = date.getDate();
@@ -17,6 +16,7 @@ function formartSalary(salary){
     }else
     return String(salary).replace(/(.)(?=(\d{3})+$)/g,'$1.') + ' $' ;
 }
+
 
 class BaseJS{
     constructor(){
@@ -55,4 +55,53 @@ class BaseJS{
     
         })
     }
+
+    // addData(){
+    //     var employeecode = getString(EmployeeCode) ;
+    //     var fullname = getString(FullName) ;
+    //     var gendername = getGender(GenderName) ;
+    //     var dateofbirth = getString(dateofBirth) ;
+    //     var phonenumber = getString(PhoneNumber) ;
+    //     var employeeEmail = getString(email) ;
+    //     var positioname = getString(PositionName) ;
+    //     var departmentcode = getString(DepartmentCode);
+    //     var salary = getString(Salary);
+    //     var workstatus =  getWorkStatus(WorkStatus) ;
+    //     var employeeid = getString(employeeId) ;
+    //     var identitydate = getString(identityDate) ;
+    //     var identityplace = getString(identityPlace) ;
+    //     var personaltaxCode = getString(personalTaxCode) ;
+    //     var createddate = getString(createdDate) ;
+
+
+    //     self.sendEmail = function(employeecode, fullname, gendername, dateofbirth,phonenumber, employeeEmail,positioname,departmentcode,salary,workstatus,employeeid,identitydate,identityplace,personaltaxCode, createddate) {
+    //         $.ajax({
+    //             url:  "http://cukcuk.manhnv.net/v1/Employees",
+    //             type: "POST",
+    //             data: {
+    //                 'EmployeeCode':  employeecode,
+    //                 'FullName': fullname ,
+    //                 'dateofBirth': dateofbirth,
+    //                 'PhoneNumber': phonenumber,
+    //                 'GenderName' : gendername ,
+    //                 'email' :  employeeEmail ,
+    //                 'PositionName' : positioname ,
+    //                 'DepartmentCode' : departmentcode ,
+    //                 'Salary': salary ,
+    //                 'WorkStatus': workstatus ,
+    //                 'employeeId': employeeid , 
+    //                 'identityDate': identitydate ,
+    //                 'identityPlace': identityplace ,
+    //                 'personalTaxCode': personaltaxCode ,
+    //                 'createdDate': createddate
+    //             },
+    //             contentType: "application/json",
+    //             success: function (data) {
+    //                console.log(ko.toJSON(data));
+    //                document.getElementsByClassName('modal')[0].style.display = 'none';
+    //                loadData() ;
+    //             }
+    //         });
+    //     }
+    // }
 }
