@@ -104,4 +104,11 @@ class BaseJS{
     //         });
     //     }
     // }
+
+    $('#EmployeeCode').blur(function() {
+        
+    })
+
+        
+ 
 }

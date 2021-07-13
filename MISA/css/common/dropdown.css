@@ -1,7 +1,15 @@
 .custom-select-wrapper {
-    position: relative;
+    /* position: relative;
     user-select: none;
-    width: 100%;
+    width: 15%; */
+    height: 36px;
+    width: 180px;
+    margin-left: 10px;
+    outline: none;
+    line-height: 40px ;
+    border: 1px solid #bbbbbb;
+    padding-left: 40px;
+    border-radius: 4px;
 }
 .custom-select {
     position: relative;
@@ -17,11 +25,11 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 22px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: #3b3b3b;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
     background: #ffffff;
     cursor: pointer;
     border-width: 2px 0 2px 0;
@@ -52,10 +60,10 @@
     position: relative;
     display: block;
     padding: 0 22px 0 22px;
-    font-size: 22px;
+    font-size: 15px;
     font-weight: 300;
     color: #3b3b3b;
-    line-height: 60px;
+    line-height: 40px;
     cursor: pointer;
     transition: all 0.5s;
 }

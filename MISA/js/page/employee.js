@@ -3,12 +3,9 @@ $(document).ready(function(){
 })
 
 
-function getString(id){
-    return document.getElementById(id).value ;
-}
 
 function getGender(id){
-    var index = getElementById(id).value ;
+    var index = document.getElementById(id).value ;
     switch(index) {
         case 'Nam':
           return 0 ;
@@ -22,7 +19,7 @@ function getGender(id){
 }
 
 function getWorkStatus(id){
-    var index = getElementById(id).value ;
+    var index = document.getElementById(id).value ;
     switch(index) {
         case 'Giam doc':
           return 0 ;
@@ -33,22 +30,22 @@ function getWorkStatus(id){
 }
 
 
-function  addData(){
-        var employeecode = getString(document.getElementById(EmployeeCode).value) ;
-        var fullname = getString(FullName) ;
-        var gendername = getGender(GenderName) ;
-        var dateofbirth = getString(dateofBirth) ;
-        var phonenumber = getString(PhoneNumber) ;
-        var employeeEmail = getString(email) ;
-        var positioname = getString(PositionName) ;
-        var departmentcode = getString(DepartmentCode);
-        var salary = getString(Salary);
-        var workstatus =  getWorkStatus(WorkStatus) ;
-        var employeeid = getString(employeeId) ;
-        var identitydate = getString(identityDate) ;
-        var identityplace = getString(identityPlace) ;
-        var personaltaxCode = getString(personalTaxCode) ;
-        var createddate = getString(createdDate) ;
+function addData(){
+        var employeecode = document.getElementById("EmployeeCode").value ;
+        var fullname = document.getElementById("FullName").value ;
+        var gendername = getGender("GenderName") ;
+        var dateofbirth = document.getElementById("dateofBirth").value ;
+        var phonenumber = document.getElementById("PhoneNumber").value ;
+        var employeeEmail = document.getElementById("email").value ;
+        var positioname = document.getElementById("PositionName").value ;
+        var departmentcode = document.getElementById("DepartmentCode").value;
+        var salary = document.getElementById("Salary").value;
+        var workstatus =  getWorkStatus("WorkStatus") ;
+        var employeeid = document.getElementById("employeeId").value ;
+        var identitydate = document.getElementById("identityDate").value ;
+        var identityplace = document.getElementById("identityPlace").value ;
+        var personaltaxCode = document.getElementById("personalTaxCode").value ;
+        var createddate = document.getElementById("createdDate").value ;
 
 
         self.sendEmail = function(employeecode, fullname, gendername, dateofbirth,phonenumber, employeeEmail,positioname,departmentcode,salary,workstatus,employeeid,identitydate,identityplace,personaltaxCode, createddate) {
@@ -70,7 +67,7 @@ function  addData(){
                     'identityDate': identitydate ,
                     'identityPlace': identityplace ,
                     'personalTaxCode': personaltaxCode ,
-                    'createdDate': createddate
+                    'createdDate': createddate 
                 },
                 contentType: "application/json",
                 success: function (data) {
