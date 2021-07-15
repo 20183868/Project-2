@@ -1,0 +1,95 @@
+
+.addform{
+    display: flex;
+    border: 1px solid white;
+    height: 100%;
+    padding: 20px;
+}
+#inforemployee{
+    font-size: 20px;
+    font-family: 'regular';
+    white-space: nowrap;
+}
+#defaultavatar{
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid #BBBB;
+    margin-left: 10px;
+}
+.contentform{
+    margin-top: 20px;
+    height: 100%;
+}
+.avatarform{
+    margin-top: 30px;
+    margin-left: 15px;
+    text-align: start;
+}
+.textfield{
+    height: 40px;
+    padding-left: 16px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    color: black;
+    font-family: 'regular';
+    font-size: 13px;
+    padding-bottom: 4px;
+}
+.textfield:focus{
+    outline: 1px solid #019160;
+}
+.codeandname{
+    text-align: left;
+}
+.form{
+    margin-top: 75px;
+    height: 100%;
+}
+#imgpara{
+    width: 200px;
+    text-align: center;
+}
+#linediv{
+    border-top: 3px solid #019160;
+    width: 100px;
+}
+tr:hover{
+    background-color: #BBBB !important;
+}
+#star{
+    color: red;
+}
+#employeecode{
+    text-align: left;
+    margin: 0px;
+}
+.titleemployee{
+    display: flex;
+    margin-top: 10px;
+}
+.endform{
+    background-color: #e5e5e5;
+    text-align: right;
+    padding: 5px;
+}
+.btnend{
+    height: 40px;
+    border: 1px solid #bbbbbb;
+    border-radius: 5px;
+    width: 80px;
+    font-size: 13px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+}
+.codeandname{
+    position: relative;
+}
+#VND{
+    font-style: italic;
+    font-family: 'regular';
+    font-size: 13px;
+    top: 8px;
+    position: absolute;
+    right: 30px;
+}

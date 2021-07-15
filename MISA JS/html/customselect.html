@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="../css/layout/customselect.css">
+<div class="custom-select-wrapper">
+    <div class="custom-select">
+        <div class="custom-select__trigger">
+            <input type="text" id="selectcar" name="car" value="Tesla">
+            <div class="arrow"></div>
+        </div>
+        <div class="custom-options">
+            <span class="custom-option selected" data-value="tesla"><i></i>Tesla</span>
+            <span class="custom-option" data-value="volvo"><i></i>Volvo</span>
+            <span class="custom-option" data-value="mercedes"><i></i>Mercedes</span>
+        </div>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    document.querySelector('.custom-select-wrapper').addEventListener('click', function () {
+        this.querySelector('.custom-select').classList.toggle('open');
+    });
+    for (const option of document.querySelectorAll(".custom-option")) {
+        $('.custom-options').on('click', 'span', function () {
+            if (!$('this').hasClass('selected')) {
+                $('.custom-option.selected i').removeClass('fa fa-check');
+                this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+                this.classList.add('selected');
+                $('.custom-option.selected i').addClass('fa fa-check');
+                this.closest('.custom-select').querySelector('input[name="car"]').value = this.textContent;
+            }
+        })
+    };
+    function arrowKeySelection(e) {
+        if ($('.custom-select').hasClass('open')) {
+            e = e || window.event;
+            let selected = $('.custom-option.selected');
+            let iconselected = $('.custom-option.selected i');
+            if (e.keyCode == '38') {
+                if (selected.prev().is('span')) {
+                    selected.prev().addClass('selected');
+                    selected.removeClass('selected');
+                    iconselected.removeClass('fa fa-check');
+                    $('.custom-option.selected i').addClass('fa fa-check');
+                    $('input[name="car"]').val($('.custom-option.selected').text());
+                }
+                else {
+                    selected.removeClass('selected');
+                    $('.custom-option').last().addClass('selected');
+                    $('.custom-option.selected i').addClass('fa fa-check');
+                }
+            }
+            else if (e.keyCode == '40') {
+                // down arrow
+            }
+            else if (e.keyCode == '37') {
+                // left arrow
+            }
+            else if (e.keyCode == '39') {
+                // right arrow
+            }
+        }
+        else return;
+    }
+    document.onkeydown = arrowKeySelection;
+    window.addEventListener('click', function (e) {
+        const select = document.querySelector('.custom-select')
+        if (!select.contains(e.target)) {
+            select.classList.remove('open');
+        }
+    });
+</script>

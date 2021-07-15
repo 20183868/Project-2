@@ -1,0 +1,41 @@
+<link rel="stylesheet" href="../css/layout/navbar.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="navbar">
+    <div class="navbar-list">
+        <ul id="menu-list" style="list-style-type: none;">
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/dashboard.png"><span>Tổng
+                        quan</span></button></li>
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/report.png"><span>Báo
+                        cáo</span></button></li>
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/dashboard.png"><span>Mua
+                        hàng</span></button></li>
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/dic-employee.png"><span>Danh mục
+                        nhân viên</span></button></li>
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/dic-employee.png"><span>Danh mục
+                        khách hàng</span></button></li>
+            <li><button class="list-button"><img class="icon-list" src="../content/icon/setting.png"><span>Thiết lập hệ
+                        thống</span></button></li>
+        </ul>
+        <button type="button" accesskey="m" id="mini"><i id="icon" class="fa fa-angle-left"></i></button>
+    </div>
+</div>
+<script>
+    var x = document.getElementsByClassName('list-button');
+    function ministate() {
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.toggle("minisize");
+            x[i].querySelector("span").classList.toggle("hide");
+        }
+    }
+    function changeicon() {
+        if (document.getElementById('icon').classList.contains('fa-angle-left')) {
+            $("#icon").removeClass("fa fa-angle-left").addClass("fa fa-angle-right");
+        }
+        else
+            $("#icon").removeClass("fa fa-angle-right").addClass("fa fa-angle-left");
+    }
+    document.getElementById('menu').addEventListener("click", ministate);
+    document.getElementById('menu').addEventListener("click", changeicon);
+    document.getElementById('mini').addEventListener("click", ministate);
+    document.getElementById('mini').addEventListener("click", changeicon);
+</script>

@@ -1,0 +1,101 @@
+<link rel="stylesheet" href="../css/layout/content.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/layout/customselect.css">
+<div class="content">
+    <div class="head-content">
+        <p id="employee-list">Danh sách nhân viên</p>
+        <button accesskey="a" id="buttonadd" type="button"><img src="../content/icon/add.png" id="imgadd">Thêm Nhân
+            Viên</button>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" accesskey="c">&times;</span>
+            <div id="addform"></div>
+            <div class="endform">
+                <button class="btnend" style="background-color: #e5e5e5; border: none;" id="delete-employee"
+                    type="button">Delete</button>
+                <button class="btnend" style="background-color: #e5e5e5; border: none;" id="cancelform"
+                    type="button">Hủy</button>
+                <button class="btnend" style="background-color: #019160; color: white;" id="save-employee"
+                    type="button"><i class="fa fa-floppy-o" style="margin-right: 8px; font-size: 16px;"></i>Lưu</button>
+            </div>
+        </div>
+    </div>
+    <div class="finder">
+        <div class="finder-findtext">
+            <input accesskey="s" type="text" class="findtext" id="finder-findtext"
+                placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Tìm kiếm theo Mã, Tên hoặc Số điện thoại'">
+            <div><i class="fa fa-times"></i></div>
+        </div>
+        <div class="custom-select-wrapper">
+            <div class="custom-select" style="height: 100% !important;">
+                <div class="custom-select__trigger">
+                    <input type="text" id="selectcar" name="department" value="Tất cả phòng ban">
+                    <div class="arrow"></div>
+                </div>
+                <div class="custom-options">
+                    <span class="custom-option selected" departmentid=""><i class="fa fa-check"></i>Tất cả phòng ban</span>
+                </div>
+            </div>
+        </div>
+        <div class="custom-select-wrapper-position">
+            <div class="custom-select-position" style="height: 100%;">
+                <div class="custom-select__trigger-position">
+                    <input type="text" id="selectposition" name="position" value="Tất cả vị trí">
+                    <div class="arrow"></div>
+                </div>
+                <div class="custom-options-position">
+                    <span class="custom-option-position selected" positionid=""><i class="fa fa-check"></i>Tất cả vị trí</span>
+                </div>
+            </div>
+        </div>
+        <button id="btnrefresh" type="button"><img id="refresh" src="../content/icon/refresh.png"></button>
+    </div>
+    <div id="tablecontainer">
+        <table class="table table-responsive w-100 d-block d-md-table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Mã nhân viên</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Ngày sinh</th>
+                    <th>Điện thoại</th>
+                    <th>Email</th>
+                    <th>Chức vụ</th>
+                    <th>Phòng ban</th>
+                    <th>Mức lương cơ bản</th>
+                    <th>Tình trạng công việc</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        <ul id="listpage" style="list-style-type: none;">
+            <li class="list-page"><img src="../content/icon/btn-firstpage.svg" id="firstpage" alt="firstpage"></li>
+            <li class="list-page"><img src="../content/icon/btn-prev-page.svg" id="prevpage" alt="prevpage"></li>
+            <li class="list-page"><a class="page-link" id="page-1" href="#">1</a></li>
+            <li class="list-page"><a class="page-link" id="page-2" href="#">2</a></li>
+            <li class="list-page"><a class="page-link" id="page-3" href="#">3</a></li>
+            <li class="list-page"><a class="page-link" id="page-4" href="#">4</a></li>
+            <li class="list-page"><img src="../content/icon/btn-next-page.svg" id="nextpage" alt="firstpage"></li>
+            <li class="list-page"><img src="../content/icon/btn-lastpage.svg" id="lastpage" alt="lastpage"></li>
+
+        </ul>
+    </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="../js/page/formatcontent.js"></script>
+<script src="../js/page/employee.js" type="text/javascript"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>

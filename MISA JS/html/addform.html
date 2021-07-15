@@ -1,0 +1,151 @@
+<link rel="stylesheet" href="../css/layout/addform.css">
+<div class="addform">
+    <div class="contentform">
+        <p id="inforemployee" style="text-align: left;">THÔNG TIN NHÂN VIÊN</p>
+        <div class="avatarform">
+            <img id="defaultavatar" src="../content/img/default-avatar.jpg">
+            <p id="imgpara">(vui lòng chọn ảnh có dạng .jpg, .jpeg, .png, .gif.)</p>
+        </div>
+    </div>
+    <div class="form">
+        <p style="text-align: left; font-family: 'regular';">A. THÔNG TIN CHUNG:</p>
+        <div id="linediv">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Mã nhân viên (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input id="employee-code-input" title="" disabled class="textfield" type="text"
+                style="width: 300px; margin-right: 20px;" placeholder="Mã nhân viên" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Mã nhân viên'" required>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày sinh</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="employee-date-of-birth" type="date" style="width: 300px; margin-right: 20px;">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Số CMTND/ Căn cước (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" title="" id="identity-number" type="text" onkeypress="return isNumberKey(event)"
+                maxlength="16" style="width: 300px; margin-right: 20px;" placeholder="Số CMTND/ Căn cước"
+                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Số CMTND/ Căn cước'" required>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Nơi cấp</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="identity-place" type="text" style="width: 300px; margin-right: 20px;"
+                placeholder="Nơi cấp" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nơi cấp'">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Email (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" type="email" id="employee-email" title="" style="width: 300px; margin-right: 20px;"
+                placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'">
+        </div>
+        <p style="text-align: left; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG VIỆC:</p>
+        <div id="linediv">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Vị trí</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" id="position-employee" style="width: 300px; margin-right: 20px;">
+            </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Mã số thuế</p>
+        </div>
+        <div class="codeandname">
+            <input id="personal-tax-code" class="textfield" title="" type="tel"
+                style="width: 300px; margin-right: 20px;" placeholder="Mã số thuế" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Mã số thuế'" onkeypress="return isNumberKey(event)">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày gia nhập công ty</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="join-date-employee" type="date" style="width: 300px; margin-right: 20px;">
+        </div>
+    </div>
+    <div class="form2" style="margin-top: 117px;">
+        <div class="titleemployee">
+            <p id="employeecode">Họ và tên (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="fullname-employee" title="" type="text" onkeypress="return !isNumberKey(event)" required
+                style="width: 300px; margin-right: 20px;" placeholder="Họ và tên" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Họ và tên'">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Giới tính</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" id="gender-name-employee" style="width: 300px; margin-right: 20px;">
+                <option value="1">Nam</option>
+                <option value="0">Nữ</option>
+                <option value="2">Không xác định</option>
+                <option value="3">null</option>
+            </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Ngày cấp</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="identity-date-employee" type="date" style="width: 300px; margin-right: 20px;">
+        </div>
+        <div class="titleemployee" style="visibility: hidden;">
+            <p id="employeecode">Ngày cấp</p>
+        </div>
+        <div class="codeandname" style="visibility: hidden;">
+            <input class="textfield" type="date" style="width: 300px; margin-right: 20px;">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Số điện thoại (<span id="star">*</span>)</p>
+        </div>
+        <div class="codeandname">
+            <input class="textfield" id="phonenumber-employee" title="" type="tel" required maxlength="10"
+                style="width: 300px; margin-right: 20px;" placeholder="Số điện thoại" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Số điện thoại'" onkeypress="return isNumberKey(event)">
+        </div>
+        <p style="text-align: left; visibility: hidden; margin-top: 10px; font-family: 'regular';">B. THÔNG TIN CÔNG
+            VIỆC:</p>
+        <div id="linediv" style="visibility: hidden;">
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Phòng ban</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" id="department-employee" style="width: 300px; margin-right: 20px;">
+            </select>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Mức lương cơ bản</p>
+        </div>
+        <div class="codeandname">
+            <input id="salary-employee" class="textfield" type="text" title="" required style="width: 300px; margin-right: 20px;"
+                placeholder="Mức lương cơ bản" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Mức lương cơ bản'" oninput="salary()"
+                onkeypress="return isNumberKey(event)">
+            <span id="VND">(VNĐ)</span>
+        </div>
+        <div class="titleemployee">
+            <p id="employeecode">Tình trạng công việc</p>
+        </div>
+        <div class="codeandname">
+            <select class="textfield" id="workstatus-employee" style="width: 300px; margin-right: 20px;">
+                <option>Đang làm việc</option>
+                <option>Đã nghỉ</option>
+                <option>Tạm nghỉ</option>
+            </select>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/page/formmatnumber.js"></script>
+<script src="../js/page/validateform.js"></script>

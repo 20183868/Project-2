@@ -1,0 +1,121 @@
+.custom-select-wrapper, .custom-select-wrapper-position {
+    position: relative;
+    user-select: none;
+    width: 300px;
+    height: 36px;
+    border: 1px solid #DBDEFF;
+    border-radius: 5px;
+    margin-left: 12px;
+    align-items: baseline;
+    vertical-align: middle;
+}
+.custom-select-wrapper:hover, .custom-select-wrapper-position:hover{
+    border: 1px solid #61eebf;
+}
+#selectcar, #selectposition{
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 13px;
+    font-family: 'regular';
+}
+#selectcar:focus, #selectposition:focus{
+    outline: none;
+}
+.custom-select, .custom-select-position{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background: none;
+}
+.custom-select__trigger, .custom-select__trigger-position{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: 'googleblack';
+    background: #ffffff;
+    cursor: pointer;
+}
+.custom-options, .custom-options-position {
+    position: absolute;
+    display: block;
+    top: 35px;
+    left: 0;
+    right: 0;
+    border: 2px solid #394a6d;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: 2;
+}
+.custom-select.open .custom-options, .custom-select-position.open .custom-options-position{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+}
+.custom-option, .custom-option-position{
+    position: relative;
+    display: block;
+    padding: 0 22px 0 30px;
+    font-size: 13px;
+    font-family: 'regular';
+    font-weight: 300;
+    color: #3b3b3b;
+    line-height: 60px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.custom-option i, .custom-option-position i{
+    position: absolute;
+    left: 5px;
+    top: 22px;
+    margin-right: 16px;
+    color: #ffffff;
+}
+.custom-option:hover, .custom-option-position:hover{
+    cursor: pointer;
+    background-color: #b2b2b2;
+}
+.custom-option.selected, .custom-option-position.selected {
+    color: #ffffff;
+    background-color: #163b2f;
+}
+.arrow {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 10px;
+}
+.arrow::before, .arrow::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 0.15rem;
+    height: 100%;
+    transition: all 0.5s;
+}
+.arrow::before {
+    left: -5px;
+    transform: rotate(45deg);
+    background-color: #394a6d;
+}
+.arrow::after {
+    left: 5px;
+    transform: rotate(-45deg);
+    background-color: #394a6d;
+}
+.open .arrow::before {
+    left: -5px;
+    transform: rotate(-45deg);
+}
+.open .arrow::after {
+    left: 5px;
+    transform: rotate(45deg);
+}
